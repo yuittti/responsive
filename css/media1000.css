@@ -1,0 +1,557 @@
+/* Screen 1000px - 620px */
+/* =======================================================*/
+
+/* 1000px */
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1000px){
+
+	header {
+		border-bottom: 2px solid #0798c7;
+	}
+
+    nav > ul {
+	    width: 100%;
+	    min-width: 770px;
+	}
+
+	nav > ul > li > a {
+	    font-size: 15px;
+	    line-height: 3.4em;
+	}
+
+	nav > ul > li ul#menu-about {
+		width: 230px;
+	}
+
+	ul#menu-about li {
+    	font-size: 14px;
+	}
+
+	.header-container {
+	    padding-top: 51px;
+	    width: 100%;
+	    min-width: 770px;
+	}
+
+	.header-container figure {
+	    width: 20%;
+	    margin-top: 34px;
+	    margin-bottom: 36px;
+	    margin-left: 13%;
+	}
+
+	.header-container figure > img {
+	    width: 80%;
+	}
+
+	.header-container figcaption {
+	    font-size: 14px;
+	}
+
+    .social {
+        width: 60%;
+    }
+
+	.social a {
+	    margin-right: 10px;
+	}
+
+	.social a img {
+	    width: 25px;
+	}
+
+	div[class^="dot-"] {
+	    width: 5px;
+	    height: 5px;    
+	}
+
+	div[class^="dot-"]::before {
+	    width: 9px;
+	    height: 9px;
+	    bottom: 2px;
+	    left: -2px;
+	}
+
+	.dot-1 {
+	    margin-left: 60%;
+	    margin-top: 40%;
+	}
+
+	.dothov-1 {
+        background-size: 60px;
+        background-repeat: no-repeat;
+        margin-top: -25%;
+        margin-left: 35%;
+        height: 35px;
+    }
+
+    .dot-1:hover + .dothov-1 {
+        width: 60px;
+    }
+
+    .dot-2 {
+	    margin-left: 110%;
+	    margin-top: 5%;
+	}
+
+    .dothov-2 {
+        background-size: 20px;
+        margin-top: -10%;
+        margin-left: 100%;
+        height: 17px;
+    }
+
+    .dot-2:hover + .dothov-2 {
+        width: 20px;
+    }
+
+    .dot-3 {
+	    margin-left: 90%;
+	    margin-top: 25%;
+	}
+
+    .dothov-3 {
+        background-size: 40px;
+        margin-top: -15%;
+        margin-left: 70%;
+        height: 20px;
+    }
+
+    .dot-3:hover + .dothov-3 {
+        width: 40px;
+    }
+
+    .dot-4 {
+	    margin-left: 110%;
+	    margin-top: 40%;
+	}
+
+    .dothov-4 {
+        background-size: 50px;
+        background-repeat: no-repeat;
+        margin-top: -55%;
+        margin-left: 75%;
+        height: 65px;
+    }
+
+    .dot-4:hover + .dothov-4 {
+        width: 50px;
+    }
+
+    .dot-5 {
+	    margin-left: 80%;
+	    margin-top: 40%;
+	}
+
+    .dothov-5 {
+        background-size: 40px;
+        margin-top: -25%;
+        margin-left: 65%;
+        height: 36px;
+    }
+
+    .dot-5:hover + .dothov-5 {
+        width: 40px;
+    }
+
+    header section ul li {
+    	font-size: 12px;
+	}
+
+	header section > a {
+	    padding-left: 45px;
+	    font-size: 12px !important;
+	    height: 37px;
+	    line-height: 15px;
+	}
+
+	header section a#link1 {
+	    top: 30%;
+	    width: 75%;
+    }
+
+    header section a#link1::before{
+	    background-size: 60px 60px;
+	    width: 60px;
+	    height: 60px;
+	    top: -30%;
+	}
+
+	header section a#link2 {
+	    top: 52%;
+	    width: 75%;
+	}
+
+	header section a#link2::before{
+	    background-size: 60px 60px;
+	    width: 60px;
+	    height: 60px;
+	    top: -30%;
+	}
+
+	section.circles {
+	    padding-top: 25px;
+	    padding-bottom: 30px;
+	}
+
+	.circles ul {
+	    width: 88.5%;
+	    min-width: 678px;
+	}
+
+	.circles li {
+	    font-size: 13px;
+	}	
+
+	.quote figure {
+	    width: 91.8%;
+	    min-width: 706px;
+	}
+
+	.quote p {
+	    font-size: 12px;
+	}
+
+	.quote h4 {
+	    font-size: 18px;
+	}
+
+	.gallery-wrap {
+	    font-size: 21px;
+	}
+
+	.gallery {
+	    width: 88.5%;
+	    min-width: 678px;
+	    padding-bottom: 5px;
+	}
+
+    /* Slider's controls */
+	a.bx-pager-link, a.bx-pager-link.active {
+		width: 8px !important;
+		height: 8px !important;
+	}
+
+	section.news {
+	    width: 88.5%;
+	    min-width: 678px;
+	    margin-bottom: 20px;
+	}
+
+	.flex-container h3 {
+    	font-size: 21px;
+    	margin-top: 15px;
+    	margin-bottom: 15px;
+    }
+
+    .news figure > img {
+	    margin-bottom: 12px;
+	}
+
+    .news h4 {
+    	font-size: 16px;
+    	margin-bottom: 8px;
+    }
+
+    .news figcaption > p {
+    	font-size: 12px;
+    	margin-bottom: 8px;
+	}
+
+	.news figcaption > div {
+    	font-size: 13px;
+	}
+
+	.news figcaption > div img {
+	    width: 16px;
+	    height: 16px;
+	}
+
+	.footer-container {
+		display: none;
+	}
+
+	.footer-middle {
+		display: box;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flexbox;
+	    display: flex;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
+		margin-bottom: 20px;
+		min-width: 600px;
+	}
+
+	.footer-middle .foot-social {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.footer-middle .foot-social a {
+		margin-right: 20px;
+	}
+
+	.footer-middle .foot-social img {
+		width: 35px;
+		height: 35px;
+	}
+
+	.footer-middle button {
+		margin: 0;
+	}
+
+	.footer-middle .copyright {
+		margin-top: 20px;
+		font-size: 12px;
+	}
+
+	.foot-middle-1 p {
+		font-size: 15px;
+		padding-top: 20px;
+	}
+
+	.foot-middle-1 ul {
+		list-style: none;
+		font-size: 12px;
+		padding-top: 25px;
+		padding-left: 0;
+
+		display: box;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flexbox;
+	    display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	.foot-middle-1 li {
+		display: inlilne;
+		margin-right: 10px;
+	}
+}
+
+/* 900px */
+/* -------------------------------------- */
+
+@media screen and (max-width: 900px){
+	.dot-1 {
+	    margin-top: 35%;
+	}
+
+    .dot-4 {
+	    margin-top: 30%;
+	}
+
+    .dot-5 {
+	    margin-top: 35%;
+	}
+}
+
+/* 800px */
+/* -------------------------------------- */
+@media screen and (max-width: 800px){
+	.dothov-1 {
+        background-size: 60px;
+        background-repeat: no-repeat;
+        margin-top: -25%;
+        margin-left: 30%;
+        height: 35px;
+    }
+}
+
+/* 790px */
+/* -------------------------------------- */
+@media screen and (max-width: 790px) {
+	.header-container {
+		min-width: 600px;
+	}
+
+	.header-container figure {
+		margin-left: 5%;
+	}
+
+	.header-container figcaption p {
+		font-size: 12px;
+	}
+
+	.dots {
+		margin-left: 8%;
+		margin-top: -4px;
+	}
+
+	.dothov-3 {
+        margin-top: -20%;
+        margin-left: 65%;
+    }
+
+	.dothov-4 {
+        margin-top: -65%;
+        margin-left: 75%;
+    }
+
+	header section a#link1 {
+	    width: 65%;
+	    top: 25%;
+	    right: 10%;
+    }
+
+	header section a#link2 {
+		right: 10%;
+	    width: 65%;    
+	}
+}
+
+/* 770px */
+/* -------------------------------------- */
+@media screen and (max-width: 770px) {
+	nav > ul {
+		min-width: 600px;
+	}
+
+	nav > ul > li:hover {
+	    padding-left: 1.5%;
+	    padding-right: 1.5%;
+	    margin-left: -1.5%;
+	    margin-right: -1.5%;
+	}
+
+    .quote figure::after {
+        margin-right: 25px;
+    }
+}
+
+/* 725px */
+/* -------------------------------------- */
+@media screen and (max-width: 725px) {
+
+	.dothov-1 {
+        margin-top: -30%;
+        margin-left: 30%;
+    }
+
+	.dothov-5 {
+        margin-top: -30%;
+        margin-left: 60%;
+    }
+
+	.quote figure {
+		min-width: 600px;
+	}
+
+	.circles ul {
+		min-width: 600px;
+	}
+
+	.gallery {
+		min-width: 600px;
+	}
+
+	section.news {
+		min-width: 600px;
+	}
+
+	.foot-middle-1 p {
+		font-size: 13px;
+		padding-top: 20px;
+	}
+
+	.footer-middle .foot-middle {
+		/*margin-top: 20px;*/
+		padding-left: 4px;
+	}
+}
+
+/* 675px */
+/* -------------------------------------- */
+@media screen and (max-width: 675px) {
+
+	.header-container figure {
+		width: 25%;
+	}
+
+	.header-container figure > img {
+		width: 63%;
+	}
+
+	nav > ul > li > a {
+	    font-size: 13px;
+	}
+
+	ul#menu-about li {
+    	font-size: 13px;
+	}
+
+	nav > ul > li:hover {
+	    padding-left: 1%;
+	    padding-right: 1%;
+	    margin-left: -1%;
+	    margin-right: -1%;
+	}
+
+	.dots {
+		margin-left: 3%;
+		margin-top: -1%;
+	}
+
+	.dothov-1 {
+        background-size: 50px;
+        margin-top: -30%;
+    }
+
+    .dot-1:hover + .dothov-1 {
+        width: 50px;
+    }
+
+    .dothov-2 {
+        margin-top: -15%;
+    }
+
+    .dothov-3 {
+        background-size: 35px;
+        margin-top: -20%;
+        margin-left: 65%;
+    }
+
+    .dot-3:hover + .dothov-3 {
+        width: 35px;
+    }
+
+    .dothov-4 {
+        background-size: 40px;
+        margin-top: -65%;
+        margin-left: 75%;
+        height: 60px;
+    }
+
+    .dot-4:hover + .dothov-4 {
+        width: 40px;
+    }
+
+    .dothov-5 {
+        background-size: 35px;
+        margin-top: -20%;
+        margin-left: 60%;
+        height: 32px;
+    }
+
+    .dot-5:hover + .dothov-5 {
+        width: 35px;
+    }
+
+    header section a#link1 {
+	    width: 65%;
+	    top: 25%;
+	    right: 5%;
+    }
+
+	header section a#link2 {
+		right: 5%;
+	    width: 65%;
+	}
+}

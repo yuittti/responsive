@@ -1,0 +1,385 @@
+/* Feedback form */
+/* ------------------------------------------------------------------------- */
+
+#feedbackForm {
+    width: 70%;
+    max-width: 700px;
+    background-color: #d4dedf;
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    left: 50%;   
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    box-shadow: inset 0 0 0 1px white, 0 1px 1px 1px grey;
+    -webkit-box-shadow: inset 0 0 0 1px white, 0 1px 1px 1px grey;
+     
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#feedbackForm .header {
+    padding: 30px 30px 5px 30px;
+    color: #414848;
+    background-color: #f3f3f3;
+    border-radius: inherit;
+    -moz-border-radius: inherit;
+    -webkit-border-radius: inherit;
+}
+
+#feedbackForm .header h1 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#feedbackForm .header span {
+    color: #777;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#feedbackForm .header hr {
+    margin-top: 25px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image:    -moz-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image:     -ms-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image:      -o-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+#feedbackForm ul.content {
+    list-style: none;
+    padding: 1px 30px 30px 30px;
+    background-color: #f3f3f3;
+    z-index: 99;
+    position: relative;
+}
+
+#feedbackForm li {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flexbox;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#feedbackForm .content label {
+    display: block;
+    width: 150px !important;
+}
+
+#feedbackForm .content .input {
+    width: 50%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 1px 1px #bbb, 0 2px 0 white;
+    -webkit-box-shadow: inset 0 1px 1px 1px #bbb, 0 2px 0 white;
+
+    outline: none;
+    border: none;
+
+    z-index: 999;
+    position: relative;
+}
+
+#feedbackForm .content textarea {
+    width: 490px !important;
+    height: 100px !important;
+    padding: 5px;
+}
+
+#feedbackForm .footer {
+    height: 120px;
+    border-top: 1px solid #B1BBBC;
+    
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flexbox;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    
+    padding: 0 30px 10px 30px;
+}
+
+#feedbackForm .footer input {
+    border: 1px solid #479fb8;
+    padding: 10px 30px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 1px 1px grey;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px white;
+    -webkit-box-shadow: inset 0 0 1px white;
+    cursor: pointer;
+}
+
+#send {
+    background-color: #56c2e1;
+}
+
+#send:focus, #send:active, #send:hover {
+    background-color: #4dabc6;
+}
+
+#escape {
+    background-color: #FE7275;
+}
+
+#escape:focus, #escape:active, #escape:hover {
+    background-color: #E86067;
+}
+
+#feedbackForm .content input:required {
+    background: white url('../images/red_asterisk.png') center left 98% no-repeat;
+}
+
+#feedbackForm input:focus:required:invalid {
+    box-shadow: none;
+    border: 2px solid red;
+    background: white url('../images/invalid.png') center left 98% no-repeat;
+}
+
+#feedbackForm input:required:valid {
+    box-shadow: none;
+    border: 2px solid #68b12f;
+    background: white url('../images/valid.png') center left 98% no-repeat;
+}
+
+.input:focus:invalid + .input-hint {
+    padding-left: 10px;
+    display: inline;
+}
+
+.input:focus:valid + .input-hint {
+    padding-left: 10px;
+    display: inline;
+    background-color: green;
+}
+
+.input:focus:valid + .input-hint:before {
+    display: block;
+    content: '';
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid green;
+    border-top: 8px solid transparent;
+    margin-left: -17px;
+    margin-right: 9px;
+    position: absolute;
+}
+
+.input:focus:invalid + .input-hint:before {
+    display: block;
+    content: '';
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid red;
+    border-top: 8px solid transparent;
+    margin-left: -17px;
+    margin-right: 9px;
+    position: absolute;
+}
+
+.input-hint {
+    display: none;
+    font-size: 12px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 7px;
+    padding: 10px;
+}
+
+/* 990 px */
+
+@media screen and (max-width: 990px) {
+
+    #feedbackForm .content textarea {
+        width: 350px !important;
+    }
+
+    #feedbackForm .content label {
+        width: 100px !important;
+    }
+}
+
+/* 780 px */
+
+@media screen and (max-width: 780px) {
+
+    #feedbackForm {
+        width: 70%;
+    }
+
+    #feedbackForm .header {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #feedbackForm .header h1 {
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    #feedbackForm .header span {
+        font-size: 13px;
+    }
+
+    #feedbackForm ul.content {
+        padding: 1px 20px 20px 20px;
+    }
+
+    #feedbackForm li {
+        margin-top: 15px;
+    }
+
+    #feedbackForm .content label {
+        width: 90px !important;
+        font-size: 14px;
+    }
+
+    #feedbackForm .content .input {
+        width: 45%;
+        height: 35px;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    #feedbackForm .content textarea {
+        width: 250px !important;
+        height: 75px !important;
+    }
+
+    #feedbackForm .footer {
+        height: 100px;        
+        padding: 0 10px 10px 20px;
+    }
+
+    #feedbackForm .footer input {
+        font-size: 18px;
+    }
+
+    #feedbackForm .footer input {
+        padding: 7px 20px;
+        font-size: 18px;
+    }
+
+    #send {
+        margin-right: 10px;
+    }
+
+    .input-hint {
+        font-size: 10px;
+        margin-left: 7px;
+        padding: 3px 10px;
+    }
+}
+
+/* 620 px */
+
+@media screen and (max-width: 620px) {
+
+    #feedbackForm li {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+    }
+
+    #feedbackForm .content .input {
+        width: 65%;
+    }
+
+    #feedbackForm .content label {
+        width: 75% !important;
+    }
+
+    #feedbackForm .content textarea {
+        width: 75% !important;
+    }
+
+    .input:focus:invalid + .input-hint {
+        display: none;
+    }
+
+    .input:focus:valid + .input-hint {
+        display: none;
+    }
+
+    .input:focus:valid + .input-hint:before {
+        display: none;
+    }
+
+    .input:focus:invalid + .input-hint:before {
+        display: none;
+    }
+}
+
+/* 435 px */
+
+@media screen and (max-width: 435px) {
+    #feedbackForm .content .input {
+        width: 100%;
+    }
+
+    #feedbackForm .content textarea {
+        width: 100% !important;
+    }
+
+    #feedbackForm .footer {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        padding-top: 30px;
+    }
+
+    #feedbackForm .footer input {
+        padding: 5px 40px;
+        color: white;
+        font-size: 16px;
+        text-shadow: 0 1px 1px grey;
+        border-radius: 5px;
+        box-shadow: inset 0 0 1px white;
+        cursor: pointer;
+    }
+
+    #send {
+        width: 165px;
+    }
+
+    #escape {
+        min-width: 165px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+}

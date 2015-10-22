@@ -1,0 +1,124 @@
+/*
+* Changing elements' styles for max-width screens:
+*   1490 - 1000px
+*/
+
+/*Screen 1490px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1490px){
+    header section a#link1 {
+        width: 100%;
+        right: -50%;
+    }
+
+    header section a#link2 {
+        width: 100%;
+        right: -50%;
+    }
+}
+
+/*Screen 1410px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1410px){
+    header section a#link1 {
+        width: 90%;
+        right: -40%;
+    }
+
+    header section a#link2 {
+        width: 90%;
+        right: -40%;
+    }
+}
+
+/*Screen 1315px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1315px){
+    header section a#link1 {
+        right: -30%;
+    }
+
+    header section a#link2 {
+        right: -30%;
+    }
+}
+
+/*Screen 1255px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1255px){
+    header section a#link1 {
+        width: 80%;
+        right: -20%;
+    }
+
+    header section a#link2 {
+        width: 80%;
+        right: -20%;
+    }
+}
+
+/*Screen 1160px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1160px){
+    header section a#link1 {
+        right: -15%;
+        width: 75%;
+    }
+
+    header section a#link2 {
+        right: -15%;
+        width: 75%;
+    }
+}
+
+/*Screen 1120px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1120px){
+    header section a#link1 {
+        right: -10%;
+        width: 70%;
+        background: -webkit-linear-gradient(to right, #d0e4a9 5%,#a9cd39 38%,#ecf6fb 90%);
+        background: -moz-linear-gradient(to right, #d0e4a9 5%,#a9cd39 38%,#ecf6fb 90%);
+        background: -ms-linear-gradient(to right, #d0e4a9 5%,#a9cd39 38%,#ecf6fb 90%);
+        background: -o-linear-gradient(to right, #d0e4a9 5%,#a9cd39 38%,#ecf6fb 90%);
+        background: linear-gradient(to right, #d0e4a9 5%,#a9cd39 38%,#ecf6fb 90%);
+    }
+
+    header section a#link2 {
+        right: -10%;
+        width: 70%;
+        background: -webkit-linear-gradient(to right, #7ee5f2 5%, #0bd4e9 38%, #ecf6fb 90%);
+        background: -moz-linear-gradient(to right, #7ee5f2 5%, #0bd4e9 38%, #ecf6fb 90%);
+        background: -ms-linear-gradient(to right, #7ee5f2 5%, #0bd4e9 38%, #ecf6fb 90%);
+        background: -o-linear-gradient(to right, #7ee5f2 5%, #0bd4e9 38%, #ecf6fb 90%);
+        background: linear-gradient(to right, #7ee5f2 5%, #0bd4e9 38%, #ecf6fb 90%);
+    }
+}
+
+/*Screen 1080px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1080px){
+    header section a#link1 {
+        right: -5%;
+    }
+
+    header section a#link2 {
+        right: -5%;
+    }
+}
+
+/*Screen 1040px*/
+/*--------------------------------------------------------*/
+@media screen and (max-width: 1040px){
+    header section a#link1 {
+        right: 0;
+        width: 65%;
+        font-size: 16px;
+    }
+
+    header section a#link2 {
+        right: 0;
+        width: 65%;
+        font-size: 16px;
+    }
+}
